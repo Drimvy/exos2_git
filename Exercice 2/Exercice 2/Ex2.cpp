@@ -1,9 +1,10 @@
 // Canevas Ex2 SL228_POBJ language C++ 
 // Visual Studio 2015
-// 11.11.2016 C. Huber
+// 15.12.2022 C. Mieville
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 
@@ -24,7 +25,7 @@ int main (void)
 	
 
 	// a adapter
-	cout << "Exercice 2 : Huber Christian" << endl;
+	cout << "Exercice 2 : Caroline Mieville" << endl;
 
 
 	do {
