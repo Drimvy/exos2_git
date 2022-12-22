@@ -5,10 +5,10 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include "mesFonctions.h"
 using namespace std;
 
 
-// Fonction Extract
 
 
 // Fonction AfficheB
@@ -20,7 +20,13 @@ using namespace std;
 int main (void)
 {
 	char UserAnswer;
-	int ValA, ValB;
+	unsigned long ValA;
+	unsigned short int Minute;
+	unsigned short int Heure;
+	unsigned short Sec;
+	int ValB;
+	char HorD;
+	int space;
 	// Variables pour test A, B et C
 	
 
@@ -37,13 +43,19 @@ int main (void)
 			case 'a':
 				cout << "TestA: entrez un nombre de secondes" << endl;
 				cin >> ValA;
-				
+				Sec = Extract(ValA, Minute, Heure);
+				cout << "ValA ="<< ValA <<"NbHeures =" << Heure << " NbMinutes =" << Minute << "NbSecondes = ss" << Sec << endl;				
 			break;
 
 			case 'B':
 			case 'b':
 				cout << "TestB: entrez un nombre " <<  endl;
 				cin >> ValB; 
+				cout << "Voulez-vous afficher en Hexa (H) ou en décimal (D)?" << endl;
+				cin >> HorD;
+				cout << "Quel taille de champ voulez-vous ?" << endl;
+				cin >> space;
+				AfficheB(ValB, HorD, space);
 				
 			break;
 
@@ -66,3 +78,4 @@ int main (void)
 
 	return (0);
 }
+

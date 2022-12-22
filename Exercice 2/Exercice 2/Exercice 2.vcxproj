@@ -124,6 +124,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ex2.cpp" />
+    <ClCompile Include="mesFonction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mesFonctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
