@@ -86,7 +86,7 @@ int main (void)
 				X2 = 60;
 				Y1 = 20;
 				Y2 = 40;
-				Res = CalculSurfaceRectangleInt(X1, Y1, X2, Y2);
+				Res = CalculSurfaceRectangleXY(X1, Y1, X2, Y2);
 				cout << "X1 =" << X1 << "Y1 =" << Y1 << "X2 =" << X2 << "Y2 =" << Y2 << " Surface =" << Res << endl;
 				
 
