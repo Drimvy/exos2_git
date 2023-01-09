@@ -32,3 +32,37 @@ void AfficheB(long ValD, char ValH, short int TChamp)
 		std::cout << "ERREUR donnée entrée pour afficher en hexa ou décimal" << std::endl;
 	}
 }
+
+int CalculSurfaceRectangleInt(int longueur, int largeur)
+{
+	int resultat;
+
+	resultat = longueur * largeur;
+
+	return(resultat);
+}
+double CalculSurfaceRectangleDouble(double longueur, double  largeur)
+{
+	double resultat;
+
+	resultat = longueur * largeur;
+
+	return(resultat);
+
+}
+int CalculSurfaceRectangleXY(int X1, int Y1, int X2, int Y2)
+{
+	int largeur;
+	int longueur;
+	int resultat;
+
+	longueur = X2 - X1;
+	largeur = Y2 - Y1;
+	resultat = longueur * largeur;
+
+	return(resultat);
+
+}
+
+
+
